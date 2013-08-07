@@ -3,7 +3,7 @@
 /***************************************************************
  * Extension Manager/Repository config file for ext "macina_searchbox".
  *
- * Auto generated 07-08-2013 11:09
+ * Auto generated 07-08-2013 11:10
  *
  * Manual updates:
  * Only the data in the array - everything else is removed by next
@@ -28,10 +28,10 @@ $EM_CONF[$_EXTKEY] = array (
 	'lockType' => '',
 	'author' => 'Wolfgang Becker',
 	'author_email' => 'wb@macina.com',
-	'author_company' => 'MACINA - interactive media',
+	'author_company' => '',
 	'CGLcompliance' => NULL,
 	'CGLcompliance_note' => NULL,
-	'version' => '1.0.2',
+	'version' => '2.1.0',
 	'constraints' => 
 	array (
 		'depends' => 

@@ -53,11 +53,10 @@ class tx_macinasearchbox_pi1 extends tslib_pibase {
 		// create the content by replacing the marker in the template
 		$markerArray = array();
 		$markerArray["###HEADLINE###"] = $this->pi_getLL('headline');
-		$markerArray["###ADVANCED###"] = '<a href="'.$this->pi_getPageLink($this->conf['pidSearchpage'],"_self",array("tx_indexedsearch[ext]" => 1, "L" => $GLOBALS["TSFE"]->sys_language_uid)).'">'.$this->pi_getLL('advanced').'</a>'; 
-		
+		$markerArray["###ADVANCED###"] = '<a href="'.$this->pi_getPageLink($this->conf['pidSearchpage']).'?&tx_indexedsearch[ext]=1">'.$this->pi_getLL('advanced').'</a>'; 
 		$markerArray["###SUBMIT###"] = $this->pi_getLL('submit');
 		$markerArray["###ACTLANG###"] = $GLOBALS["TSFE"]->sys_language_uid;
-		$markerArray["###SEARCHPID###"] = $this->pi_getPageLink($this->conf['pidSearchpage'],"_self",array("L" => $GLOBALS["TSFE"]->sys_language_uid));
+		$markerArray["###SEARCHPID###"] = $this->pi_getPageLink($this->conf['pidSearchpage']);
 		
 		// buid content from template + array		
 		$content = $this->cObj->substituteMarkerArrayCached($template, array(), $markerArray , array());

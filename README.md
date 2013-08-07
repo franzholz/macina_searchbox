@@ -1,13 +1,13 @@
 # TYPO3 Extension "macina_searchbox"
 This Extension offers the possibility to add a searchbox to your Typo3 powered website which submits the searchvalue to the Indexed Search Engine  plugin. The extension has a html template which is easy to modify and supports multiple languages.
 
-## Version 1.0.2
+## Version 2.1.0
 
 
 
 
 <table>
-	<tr><td>Version</td><td>1.0.2 stable</td></tr>
+	<tr><td>Version</td><td>2.1.0 stable</td></tr>
 	<tr><td>Release date</td><td>14. October 2003</td></tr>
 	<tr><td>Author</td><td>Wolfgang Becker</td></tr>
 </table>
