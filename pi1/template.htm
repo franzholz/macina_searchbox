@@ -1,69 +1,41 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<HTML>
-<HEAD>
-<TITLE>Template file for the &quot;macina_searchbox&quot; extension.</TITLE>
-<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-</HEAD>
-<BODY>
-<H3>Template file for the &quot;macina_searchbox&quot; extension.</H3>
-<P><B>Available Markers:</B></P>
-<UL>
-  <LI>###HEADLINE### Displays the Headline</LI>
-  <LI>###ADVANCED### Advanced Search Link</LI>
-  <LI>###SUBMIT### Alttext for the submit button</LI>
-  <LI>###ACTLANG### UID of the actual language</LI>
-  <LI>###SEARCHPID### PID of the Searchpage</LI>
-</UL>
-<!-- ###TEMPLATE### begin -->
-<DIV align="center">
-<TABLE height="5" border="0" cellpadding="0" cellspacing="0">
- <TR><TD></TD></TR></TABLE>
- <TABLE width="168" border="0" cellpadding="0" cellspacing="0" bgcolor="C6D3ED" style="border-left: 1px solid #2a75a7; border-right: 1px solid #2a75a7; border-top: 1px solid #2a75a7; border-bottom: 1px solid #2a75a7">
- <TR> 
-  <TD>
-	<TABLE height="14" border="0" cellpadding="0" cellspacing="0" bgcolor="#266894">
-	 <TR>
-	  <TD width="20" align="left"><IMG src="/typo3conf/ext/macina_searchbox/pi1/teaserheader.gif" width="17" height="14"></TD>
-	  <TD valign="top"><FONT style="font-size:10px; color:#FFFFFF" ><STRONG>###HEADLINE### </STRONG></FONT></TD>
-	  <TD valign="middle" width="10">&nbsp;</TD>
-	 </TR>
-	</TABLE>
-    
-    <TABLE width="163" border="0" cellpadding="0" cellspacing="0">
-	 <TR>
-	  <TD width="10" height="8"></TD>
-	  <TD></TD>
-	  <TD></TD>
-	 </TR>
-	 <TR>
-	  <TD align="right">&nbsp;</TD>
-	  <FORM name="searchform" method="post" action="###SEARCHPID###">
-	   <TD align="left">
-			<INPUT name=tx_indexedsearch[sword] type="text" style="height:18; width:130; font-size:11"></TD>
-	   <TD>
-			<INPUT name=tx_indexedsearch[submit_button] type="image" style="border:0" value="Submit" src="/typo3conf/ext/macina_searchbox/pi1/lupe.gif" alt="###SUBMIT###" width="21" height="20">
-			<INPUT type=hidden name=tx_indexedsearch[_sections] value=0>
-			<INPUT type=hidden name=tx_indexedsearch[pointer] value=0>
-			<INPUT type=hidden name=tx_indexedsearch[ext] value=0>
-			<INPUT type=hidden name=tx_indexedsearch[lang] value=###ACTLANG###>
-		</TD>
-	  </FORM>
-	 </TR>
-	 <TR>
-	  <TD align="center" valign="middle" style="font-size:9px"></TD>
-	  <TD align="left" valign="middle" style="font-size:9px">###ADVANCED###</TD>
-	  <TD>&nbsp;</TD>
-	 </TR>
-	 <TR>
-	  <TD height="5" ></TD>
-	  <TD></TD>
-	  <TD></TD>
-	 </TR>
-	</TABLE>
-   </TD>
- </TR>
-</TABLE>
-</DIV>
-<!-- ###TEMPLATE### end -->
-</BODY>
-</HTML>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Template file for the&quot;macina_searchbox&quot;extension.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+<body>
+<h3>Template file for the &quot;macina_searchbox&quot; extension.</h3>
+<p><b>Available Markers:</b></p>
+<ul>
+  <li>###HEADLINE### Displays the Headline</li>
+  <li>###ADVANCED### Advanced Search Link</li>
+  <li>###SUBMIT### Alttext for the submit button</li>
+  <li>###ACTLANG### UID of the actual language</li>
+  <li>###SEARCHPID### PID of the Searchpage</li>
+</ul>
+<!-- ###TEMPLATE### begin -->
+<form action="###SEARCHPID###" method="post" name="searchform" id="searchform" style="margin:0px; padding:0px; ">
+  <table height="14" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td valign="top">###HEADLINE###</td>
+      <td valign="middle" width="10">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="left"><input name="tx_indexedsearch[sword]" type="text" style="height:18; width:130; font-size:11" /></td>
+      <td><input name="tx_indexedsearch[submit_button]" type="submit" style="border:0" value="Submit" />
+        <input type="hidden" name="tx_indexedsearch[_sections]" value="0" />
+        <input type="hidden" name="tx_indexedsearch[pointer]" value="0" />
+        <input type="hidden" name="tx_indexedsearch[ext]" value="0" />
+        <input type="hidden" name="tx_indexedsearch[lang]" value="###ACTLANG###" />
+      </td>
+    </tr>
+    <tr>
+      <td align="left" valign="middle" style="font-size:9px">###ADVANCED###</td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+</form>
+<!-- ###TEMPLATE### end -->
+</body>
+</html>
