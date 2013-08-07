@@ -6,51 +6,89 @@
  */
 
 $LOCAL_LANG = Array (
-	"default" => Array (
-		"headline" => "Search & Find",
-		"advanced" => "advanced search",
-		"submit" => "search",		
+	'default' => Array (
+		'headline' => 'Search & Find',
+		'advanced' => 'advanced search',
+		'submit' => 'search',
 	),
-	"dk" => Array (	
+	'dk' => Array (
 	),
-	"de" => Array (
-		"headline" => "Suchen & Finden",
-		"advanced" => "erweiterte Suche",
-		"submit" => "suchen",
+	'de' => Array (
+		'headline' => 'Suchen & Finden',
+		'advanced' => 'erweiterte Suche',
+		'submit' => 'suchen',
 	),
-	"no" => Array (
+	'no' => Array (
 	),
-	"it" => Array (
+	'it' => Array (
+		'headline' => 'Cerca nel sito',
+		'advanced' => 'ricerca avanzata',
+		'submit' => 'cerca',
 	),
-	"fr" => Array (
+	'fr' => Array (
 	),
-	"es" => Array (
+	'es' => Array (
 	),
-	"nl" => Array (
+	'nl' => Array (
 	),
-	"cz" => Array (
+	'cz' => Array (
+		'headline' => 'hledat & najít',
+		'advanced' => 'pokroèilé vyhledávání',
+		'submit' => 'hledat',
 	),
-	"pl" => Array (
+	'pl' => Array (
+		'headline' => 'Szukaj & znajd¼',
+		'advanced' => 'Szukanie zaawansowane',
+		'submit' => 'szukaj',
 	),
-	"si" => Array (
+	'si' => Array (
 	),
-	"fi" => Array (
+	'fi' => Array (
+		'headline' => 'Hae & Löydä',
+		'advanced' => 'laajennettu haku',
+		'submit' => 'haku',
 	),
-	"tr" => Array (
+	'tr' => Array (
 	),
-	"se" => Array (
+	'se' => Array (
 	),
-	"pt" => Array (
+	'pt' => Array (
 	),
-	"ru" => Array (
+	'ru' => Array (
 	),
-	"ro" => Array (
+	'ro' => Array (
 	),
-	"ch" => Array (
+	'ch' => Array (
 	),
-	"sk" => Array (
+	'sk' => Array (
 	),
-	"lt" => Array (
+	'lt' => Array (
+	),
+	'is' => Array (
+	),
+	'hr' => Array (
+	),
+	'hu' => Array (
+	),
+	'gl' => Array (
+	),
+	'th' => Array (
+	),
+	'gr' => Array (
+	),
+	'hk' => Array (
+	),
+	'eu' => Array (
+	),
+	'bg' => Array (
+	),
+	'br' => Array (
+	),
+	'et' => Array (
+	),
+	'ar' => Array (
+	),
+	'he' => Array (
 	),
 );
 ?>
