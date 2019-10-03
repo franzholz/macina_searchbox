@@ -1,4 +1,5 @@
+2019-10-03  Franz Holzinger  <franz@ttproducts.de>
+    * Replace the files locallang.php and locallang_db.php by the XML files locallang.xml and locallang_db.xml
 
 2019-10-03  Franz Holzinger  <franz@ttproducts.de>
-
     * Initial version as fork from macina_searchbox 2.2.0 by Wolfgang Becker

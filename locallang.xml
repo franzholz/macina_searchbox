@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+    <meta type="array">
+        <description></description>
+        <type></type>
+        <csh_table></csh_table>
+        <labelContext type="array">
+        </labelContext>
+    </meta>
+    <data type="array">
+        <languageKey index="default" type="array">
+            <label index="pi1_title">Searchbox</label>
+            <label index="pi1_plus_wiz_description">Adds a Searchbox to the page.</label>
+        </languageKey>
+        <languageKey index="de" type="array">
+            <label index="pi1_title">Suchbox</label>
+            <label index="pi1_plus_wiz_description">Fügt eine Suchbox zur Seite hinzu.</label>
+        </languageKey>
+        <languageKey index="fi" type="array">
+            <label index="pi1_title">Hakulaatikko</label>
+            <label index="pi1_plus_wiz_description">Lisää hakulaatikko tälle sivulle</label>
+        </languageKey>
+        <languageKey index="it" type="array">
+            <label index="pi1_title">Searchbox</label>
+            <label index="pi1_plus_wiz_description">Aggiunge alla pagina un box per la ricerca nel sito</label>
+        </languageKey>
+        <languageKey index="pl" type="array">
+            <label index="pi1_title">Wyszukiwarka</label>
+            <label index="pi1_plus_wiz_description">Dodaje okienko wyszukiwania do strony</label>
+        </languageKey>
+    </data>
+    <orig_hash type="array">
+        <languageKey index="default" type="array">
+            <label index="pi1_title" type="integer">136199813</label>
+            <label index="pi1_plus_wiz_description" type="integer">238285705</label>
+        </languageKey>
+        <languageKey index="de" type="array">
+            <label index="pi1_title" type="integer">136199813</label>
+            <label index="pi1_plus_wiz_description" type="integer">238285705</label>
+        </languageKey>
+        <languageKey index="fi" type="array">
+            <label index="pi1_title" type="integer">136199813</label>
+            <label index="pi1_plus_wiz_description" type="integer">238285705</label>
+        </languageKey>
+        <languageKey index="it" type="array">
+            <label index="pi1_title" type="integer">136199813</label>
+            <label index="pi1_plus_wiz_description" type="integer">238285705</label>
+        </languageKey>
+        <languageKey index="pl" type="array">
+            <label index="pi1_title" type="integer">136199813</label>
+            <label index="pi1_plus_wiz_description" type="integer">238285705</label>
+        </languageKey>
+    </orig_hash>
+    <orig_text type="array">
+        <languageKey index="default" type="array">
+        </languageKey>
+        <languageKey index="de" type="array">
+        </languageKey>
+        <languageKey index="fi" type="array">
+        </languageKey>
+        <languageKey index="it" type="array">
+        </languageKey>
+        <languageKey index="pl" type="array">
+        </languageKey>
+    </orig_text>
+</T3locallang>
