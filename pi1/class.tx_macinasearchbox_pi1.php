@@ -28,36 +28,35 @@
  */
 
 
-require_once(PATH_tslib."class.tslib_pibase.php");
-
-class tx_macinasearchbox_pi1 extends tslib_pibase {
-	var $prefixId = "tx_macinasearchbox_pi1";		// Same as class name
-	var $scriptRelPath = "pi1/class.tx_macinasearchbox_pi1.php";	// Path to this script relative to the extension dir.
-	var $extKey = "macina_searchbox";	// The extension key.
+class tx_macinasearchbox_pi1 extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin {
+	public $prefixId = 'tx_macinasearchbox_pi1';		// Same as class name
+	public $scriptRelPath = 'pi1/class.tx_macinasearchbox_pi1.php';	// Path to this script relative to the extension dir.
+	public $extKey = 'macina_searchbox';	// The extension key.
 	
 	/**
 	 * Main function
 	 */
-	function main($content,$conf)	{
-		$this->conf=$conf;
+	public function main($content, $conf)
+	{
+		$this->conf = $conf;
 		$this->pi_setPiVarDefaults();
 		$this->pi_loadLL();
 		
 		// get the template
-		$this->templateCode = $this->cObj->fileResource($this->conf["templateFile"]);
+		$this->templateCode = $this->cObj->fileResource($this->conf['templateFile']);
 		// get main subpart
-		$templateMarker = "###TEMPLATE###";
+		$templateMarker = '###TEMPLATE###';
 		$template = array();
 		$template = $this->cObj->getSubpart($this->templateCode, $templateMarker);
 	
 		// create the content by replacing the marker in the template
 		$markerArray = array();
-		$markerArray["###HEADLINE###"] = $this->pi_getLL('headline');
-		$markerArray["###ADVANCED###"] = '<a href="'.$this->pi_getPageLink($this->conf['pidSearchpage'],"_self",array("tx_indexedsearch[ext]" => 1, "L" => $GLOBALS["TSFE"]->sys_language_uid)).'">'.$this->pi_getLL('advanced').'</a>'; 
-		
-		$markerArray["###SUBMIT###"] = $this->pi_getLL('submit');
-		$markerArray["###ACTLANG###"] = $GLOBALS["TSFE"]->sys_language_uid;
-		$markerArray["###SEARCHPID###"] = $this->pi_getPageLink($this->conf['pidSearchpage'],"_self",array("L" => $GLOBALS["TSFE"]->sys_language_uid));
+		$markerArray['###HEADLINE###'] = $this->pi_getLL('headline');
+		$markerArray['###ADVANCED###'] = '<a href="' . $this->pi_getPageLink($this->conf['pidSearchpage'], '_self', array('tx_indexedsearch[ext]' => 1, 'L' => $GLOBALS['TSFE']->sys_language_uid)) . '">' . $this->pi_getLL('advanced') . '</a>'; 
+
+		$markerArray['###SUBMIT###'] = $this->pi_getLL('submit');
+		$markerArray['###ACTLANG###'] = $GLOBALS['TSFE']->sys_language_uid;
+		$markerArray['###SEARCHPID###'] = $this->pi_getPageLink($this->conf['pidSearchpage'], '_self', array('L' => $GLOBALS['TSFE']->sys_language_uid));
 		
 		// buid content from template + array		
 		$content = $this->cObj->substituteMarkerArrayCached($template, array(), $markerArray , array());
@@ -66,8 +65,6 @@ class tx_macinasearchbox_pi1 extends tslib_pibase {
 	}
 }
 
-if (defined("TYPO3_MODE") && $TYPO3_CONF_VARS[TYPO3_MODE]["XCLASS"]["ext/macina_searchbox/pi1/class.tx_macinasearchbox_pi1.php"])	{
-	include_once($TYPO3_CONF_VARS[TYPO3_MODE]["XCLASS"]["ext/macina_searchbox/pi1/class.tx_macinasearchbox_pi1.php"]);
+if (defined('TYPO3_MODE') && $TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/macina_searchbox/pi1/class.tx_macinasearchbox_pi1.php'])	{
+	include_once($TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/macina_searchbox/pi1/class.tx_macinasearchbox_pi1.php']);
 }
-
-?>

@@ -1,4 +1,6 @@
 2019-10-03  Franz Holzinger  <franz@ttproducts.de>
+    * add a wizard
+    * modification according to the Coding Guidelines
     * Replace the XML file locallang.xml by the files locallang.xlf de.locallang.xlf fi.locallang.xlf it.locallang.xlf pl.locallang.xlf
     * Replace the XML files locallang.xml and locallang_db.xml by the XLF files locallang.xlf locallang_db.xlf de.locallang_db.xlf  de.locallang.xlf  fi.locallang_db.xlf  fi.locallang.xlf it.locallang_db.xlf it.locallang.xlf pl.locallang_db.xlf pl.locallang.xlf
     * Replace the files locallang.php and locallang_db.php by the XML files locallang.xml and locallang_db.xml

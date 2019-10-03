@@ -1,59 +1,65 @@
 <?php
-/***************************************************************
-*  Copyright notice
-*  
-*  (c) 2003 Wolfgang Becker (wb@macina.com)
-*  All rights reserved
-*
-*  This script is part of the Typo3 project. The Typo3 project is 
-*  free software; you can redistribute it and/or modify
-*  it under the terms of the GNU General Public License as published by
-*  the Free Software Foundation; either version 2 of the License, or
-*  (at your option) any later version.
-* 
-*  The GNU General Public License can be found at
-*  http://www.gnu.org/copyleft/gpl.html.
-* 
-*  This script is distributed in the hope that it will be useful,
-*  but WITHOUT ANY WARRANTY; without even the implied warranty of
-*  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-*  GNU General Public License for more details.
-*
-*  This copyright notice MUST APPEAR in all copies of the script!
-***************************************************************/
-/** 
- * Class that adds the wizard icon.
+/*
+ * This file is part of the TYPO3 CMS project.
  *
- * @author	Wolfgang Becker <wb@macina.com>
+ * It is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License, either version 2
+ * of the License, or any later version.
+ *
+ * For the full copyright and license information, please read the
+ * LICENSE.txt file that was distributed with TYPO3 source code.
+ *
+ * The TYPO3 project - inspiring people to share!
  */
 
 
+namespace JambageCom\MacinaSearchbox\Controller\Plugin;
 
-class tx_macinasearchbox_pi1_wizicon {
-	function proc($wizardItems)	{
-		global $LANG;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
-		$LL = $this->includeLocalLang();
+/**
+ * Class that adds the wizard icon.
+ *
+ * @category    Plugin
+ * @package     TYPO3
+ * @subpackage  macina_searchbox
+ * @author      Franz Holzinger <franz@ttproducts.de>
+ * @license     http://www.gnu.org/copyleft/gpl.html
+ */
+class WizardIcon
+{
+    /**
+     * Processes the wizard items array.
+     *
+     * @param array $wizardItems The wizard items
+     * @return array Modified array with wizard items
+     */
+    public function proc(array $wizardItems)
+    {
+        $wizardIcon = 'pi1/ce_wiz.gif';
+        $listType = MACINA_SEARCHBOX_EXT . '_pi1';
+        $params = '&defVals[tt_content][CType]=list&defVals[tt_content][list_type]=' . $listType;
 
-		$wizardItems["plugins_tx_macinasearchbox_pi1"] = array(
-			"icon"=>t3lib_extMgm::extRelPath("macina_searchbox")."pi1/ce_wiz.gif",
-			"title"=>$LANG->getLLL("pi1_title",$LL),
-			"description"=>$LANG->getLLL("pi1_plus_wiz_description",$LL),
-			"params"=>"&defVals[tt_content][CType]=list&defVals[tt_content][list_type]=macina_searchbox_pi1"
-		);
+        $wizardItem = array(
+            'title' => $GLOBALS['LANG']->sL('LLL:EXT:' . MACINA_SEARCHBOX_EXT . '/locallang.xlf:pi1_title'),
+            'description' => $GLOBALS['LANG']->sL('LLL:EXT:' . MACINA_SEARCHBOX_EXT . '/locallang.xlf:pi1_plus_wiz_description'),
+            'params' => $params
+        );
 
-		return $wizardItems;
-	}
-	function includeLocalLang()	{
-		include(t3lib_extMgm::extPath("macina_searchbox")."locallang.php");
-		return $LOCAL_LANG;
-	}
+        $iconIdentifier = 'extensions-macina_searchbox-wizard';
+        /** @var \TYPO3\CMS\Core\Imaging\IconRegistry $iconRegistry */
+        $iconRegistry = GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
+        $iconRegistry->registerIcon(
+            $iconIdentifier,
+            \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
+            array(
+                'source' => 'EXT:' . MACINA_SEARCHBOX_EXT . '/' . $wizardIcon,
+            )
+        );
+        $wizardItem['iconIdentifier'] = $iconIdentifier;
+        $wizardItems['plugins_tx_' . $listType] = $wizardItem;
+
+        return $wizardItems;
+    }
 }
-
-
-
-if (defined("TYPO3_MODE") && $TYPO3_CONF_VARS[TYPO3_MODE]["XCLASS"]["ext/macina_searchbox/pi1/class.tx_macinasearchbox_pi1_wizicon.php"])	{
-	include_once($TYPO3_CONF_VARS[TYPO3_MODE]["XCLASS"]["ext/macina_searchbox/pi1/class.tx_macinasearchbox_pi1_wizicon.php"]);
-}
-
-?>

@@ -1,12 +1,27 @@
 <?php
-if (!defined ("TYPO3_MODE")) 	die ("Access denied.");
+defined('TYPO3_MODE') || die('Access denied.');
 
-t3lib_div::loadTCA("tt_content");
-$TCA["tt_content"]["types"]["list"]["subtypes_excludelist"][$_EXTKEY."_pi1"]="layout,select_key";
+$table = 'tt_content';
+
+$listType = MACINA_SEARCHBOX_EXT . '_pi1"';
+
+$GLOBALS['TCA'][$table]['types']['list']['subtypes_excludelist'][$listType] = 'layout,select_key';
+$GLOBALS['TCA'][$table]['types']['list']['subtypes_addlist'][$listType] = 'pi_flexform';
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
+    $listType,
+    'FILE:EXT:' . MACINA_SEARCHBOX_EXT . '/pi1/flexform_ds_pi1.xml'
+);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(
+    array(
+        'LLL:EXT:' . MACINA_SEARCHBOX_EXT . '/locallang_db.xlf:tt_content.list_type',
+        $listType,
+        'EXT:' . MACINA_SEARCHBOX_EXT . '/ext_icon.gif'
+    ),
+    'list_type',
+    MACINA_SEARCHBOX_EXT
+);
 
 
-t3lib_extMgm::addPlugin(Array("LLL:EXT:macina_searchbox/locallang_db.php:tt_content.list_type", $_EXTKEY."_pi1"),"list_type");
 
-
-if (TYPO3_MODE=="BE")	$TBE_MODULES_EXT["xMOD_db_new_content_el"]["addElClasses"]["tx_macinasearchbox_pi1_wizicon"] = t3lib_extMgm::extPath($_EXTKEY)."pi1/class.tx_macinasearchbox_pi1_wizicon.php";
-?>
