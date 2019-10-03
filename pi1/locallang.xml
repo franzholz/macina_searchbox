@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+    <meta type="array">
+        <description></description>
+        <type></type>
+        <csh_table></csh_table>
+        <labelContext type="array">
+        </labelContext>
+    </meta>
+    <data type="array">
+        <languageKey index="default" type="array">
+            <label index="headline">Search &amp; Find</label>
+            <label index="advanced">advanced search</label>
+            <label index="submit">search</label>
+        </languageKey>
+        <languageKey index="de" type="array">
+            <label index="headline">Suchen &amp; Finden</label>
+            <label index="advanced">erweiterte Suche</label>
+            <label index="submit">suchen</label>
+        </languageKey>
+        <languageKey index="fi" type="array">
+            <label index="headline">Hae &amp; Löydä</label>
+            <label index="advanced">laajennettu haku</label>
+            <label index="submit">haku</label>
+        </languageKey>
+        <languageKey index="it" type="array">
+            <label index="headline">Cerca nel sito</label>
+            <label index="advanced">ricerca avanzata</label>
+            <label index="submit">cerca</label>
+        </languageKey>
+        <languageKey index="pl" type="array">
+            <label index="headline">Szukaj &amp; znajdĹş</label>
+            <label index="advanced">Szukanie zaawansowane</label>
+            <label index="submit">szukaj</label>
+        </languageKey>
+    </data>
+    <orig_hash type="array">
+        <languageKey index="default" type="array">
+            <label index="headline" type="integer">129852744</label>
+            <label index="advanced" type="integer">130837161</label>
+            <label index="submit" type="integer">6984764</label>
+        </languageKey>
+        <languageKey index="de" type="array">
+            <label index="headline" type="integer">129852744</label>
+            <label index="advanced" type="integer">130837161</label>
+            <label index="submit" type="integer">6984764</label>
+        </languageKey>
+        <languageKey index="fi" type="array">
+            <label index="headline" type="integer">129852744</label>
+            <label index="advanced" type="integer">130837161</label>
+            <label index="submit" type="integer">6984764</label>
+        </languageKey>
+        <languageKey index="it" type="array">
+            <label index="headline" type="integer">129852744</label>
+            <label index="advanced" type="integer">130837161</label>
+            <label index="submit" type="integer">6984764</label>
+        </languageKey>
+        <languageKey index="pl" type="array">
+            <label index="headline" type="integer">129852744</label>
+            <label index="advanced" type="integer">130837161</label>
+            <label index="submit" type="integer">6984764</label>
+        </languageKey>
+    </orig_hash>
+    <orig_text type="array">
+        <languageKey index="default" type="array">
+        </languageKey>
+        <languageKey index="de" type="array">
+        </languageKey>
+        <languageKey index="fi" type="array">
+        </languageKey>
+        <languageKey index="it" type="array">
+        </languageKey>
+        <languageKey index="pl" type="array">
+        </languageKey>
+    </orig_text>
+</T3locallang>
