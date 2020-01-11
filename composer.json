@@ -24,22 +24,13 @@
     }
   ],
   "license": [
-    "GPL-2.0+"
+    "GPL-2.0-or-later"
   ],
   "require": {
-    "typo3/cms-core": ">=7.6.0,<8.7.99"
-  },
-  "autoload": {
-    "psr-4": {
-      "JambageCom\\MacinaSearchbox\\": "Classes"
-    },
-    "classmap": [
-      "Classes",
-      "pi1"
-    ]
+    "typo3/cms-core": ">=7.6.0,<=9.5.99"
   },
   "replace": {
-    "macina_searchbox": "self.version",
+    "jambagecom/macina-searchbox": "self.version",
     "typo3-ter/macina-searchbox": "self.version"
   },
   "extra": {

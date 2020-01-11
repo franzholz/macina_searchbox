@@ -1,5 +1,20 @@
-plugin.tx_macinasearchbox_pi1 {
-    pidSearchpage = 
-    templateFile = EXT:macina_searchbox/pi1/template.html
+
+lib.macina_searchbox = USER
+lib.macina_searchbox {
+    userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+    extensionName = IndexedSearch
+    vendorName = TYPO3\CMS
+    pluginName = Pi2
+    features =< plugin.tx_indexedsearch.features
+    view =< plugin.tx_indexedsearch.view
+    view.partialRootPaths.10 = EXT:macina_searchbox/Resources/Private/Partials/
+    view.templateRootPaths.10 = EXT:macina_searchbox/Resources/Private/Templates/
+
+    settings =< plugin.tx_indexedsearch.settings
+    settings {
+        targetPid = {$lib.macina_searchbox.pidSearchpage}
+        displayAdvancedSearchLink = 1
+        blind.numberOfResults = 0
+    }
 }
 

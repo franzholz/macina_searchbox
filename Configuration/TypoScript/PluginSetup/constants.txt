@@ -1,0 +1,10 @@
+##
+## @package TYPO3
+## @subpackage macinasearchbox
+##
+
+
+lib.macina_searchbox {
+    # cat=lib.macina_searchbox//; type=int+; label=PID for search page: This is the PID of the page with the Indexed Search plugin.
+  pidSearchpage =
+}
