@@ -27,6 +27,8 @@
  * @author	Wolfgang Becker <wb@macina.com>
  */
 
+use TYPO3\CMS\Core\Utility\GeneralUtility;
+
 
 class tx_macinasearchbox_pi1 extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin {
 	public $prefixId = 'tx_macinasearchbox_pi1';		// Same as class name
@@ -36,12 +38,13 @@ class tx_macinasearchbox_pi1 extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin {
 	/**
 	 * Main function
 	 */
-	public function main($content, $conf)
+	public function main ($content, $conf)
 	{
 		$this->conf = $conf;
 		$this->pi_setPiVarDefaults();
 		$this->pi_loadLL();
-		
+		$templateService = GeneralUtility::makeInstance(\TYPO3\CMS\Core\Service\MarkerBasedTemplateService::class);
+
 		// get the template
 		$this->templateCode = $this->cObj->fileResource($this->conf['templateFile']);
 		// get main subpart
@@ -52,17 +55,49 @@ class tx_macinasearchbox_pi1 extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin {
 		// create the content by replacing the marker in the template
 		$markerArray = array();
 		$markerArray['###HEADLINE###'] = $this->pi_getLL('headline');
-		$markerArray['###ADVANCED###'] = '<a href="' . $this->pi_getPageLink($this->conf['pidSearchpage'], '_self', array('tx_indexedsearch[ext]' => 1, 'L' => $GLOBALS['TSFE']->sys_language_uid)) . '">' . $this->pi_getLL('advanced') . '</a>'; 
+        $urlParameters = [
+            'tx_indexedsearch_pi2[action]' => 'search',
+            'tx_indexedsearch_pi2[controller]' => 'Search'
+        ];
+
+        $linkConf = array();
+        $linkConf['useCacheHash'] = '1';
+        $linkConf['useDefaultLanguageRecord'] = false;
+        $linkConf['parameter'] = $this->conf['pidSearchpage'];
+        $linkConf['additionalParams'] = GeneralUtility::implodeArrayForUrl('', $urlParameters, '', true);
+        $markerArray['###ADVANCED###'] =
+            $this->cObj->typoLink(
+                $this->pi_getLL('advanced'),
+                $linkConf
+            );
 
 		$markerArray['###SUBMIT###'] = $this->pi_getLL('submit');
 		$markerArray['###ACTLANG###'] = $GLOBALS['TSFE']->sys_language_uid;
-		$markerArray['###SEARCHPID###'] = $this->pi_getPageLink($this->conf['pidSearchpage'], '_self', array('L' => $GLOBALS['TSFE']->sys_language_uid));
+
+		$linkConf = array();
+        $linkConf['useCacheHash'] = GeneralUtility::_GET('cHash') ? '1' : '0';
+        $linkConf['useDefaultLanguageRecord'] = false;
+        $linkConf['returnLast'] = 'url';
+        $linkConf['parameter'] = $this->conf['pidSearchpage'];
+
+        $url = $this->cObj->typoLink(
+                '',
+                $linkConf
+            );
+		$markerArray['###SEARCHPID###'] = htmlspecialchars($url);
 		
 		// buid content from template + array		
-		$content = $this->cObj->substituteMarkerArrayCached($template, array(), $markerArray , array());
-		
-		return $this->pi_wrapInBaseClass($content);
-	}
+		$content =
+            $templateService->substituteMarkerArrayCached(
+                $template,
+                array(),
+                $markerArray,
+                array()
+            );
+        $result = $this->pi_wrapInBaseClass($content);
+	
+		return $result;
+    }
 }
 
 if (defined('TYPO3_MODE') && $TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/macina_searchbox/pi1/class.tx_macinasearchbox_pi1.php'])	{

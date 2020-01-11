@@ -5,11 +5,5 @@ if (
     TYPO3_MODE == 'BE'
 ) {
     $GLOBALS['TBE_MODULES_EXT']['xMOD_db_new_content_el']['addElClasses']['JambageCom\\MacinaSearchbox\\Controller\\Plugin\\WizardIcon'] = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath(MACINA_SEARCHBOX_EXT) . 'Classes/Controller/Plugin/WizardIcon.php';
-
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
-        MACINA_SEARCHBOX_EXT,
-        'Configuration/TypoScript/PluginSetup/',
-        'Macina Searchbox'
-    );
 }
 

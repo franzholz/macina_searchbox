@@ -22,12 +22,21 @@
       <td valign="middle" width="10">&nbsp;</td>
     </tr>
     <tr>
-      <td align="left"><input name="tx_indexedsearch[sword]" type="text" style="height:18; width:130; font-size:11" /></td>
-      <td><input name="tx_indexedsearch[submit_button]" type="submit" style="border:0" value="Submit" />
-        <input type="hidden" name="tx_indexedsearch[_sections]" value="0" />
-        <input type="hidden" name="tx_indexedsearch[pointer]" value="0" />
-        <input type="hidden" name="tx_indexedsearch[ext]" value="0" />
-        <input type="hidden" name="tx_indexedsearch[lang]" value="###ACTLANG###" />
+      <td align="left">
+        <input class="tx-macina-searchbox-sword" id="tx-macina-searchbox-sword" type="text" name="tx_indexedsearch_pi2[search][sword]" value="">
+      </td>
+      <td>
+        <input class="tx-indexedsearch-searchbox-button" id="tx-indexedsearch-searchbox-button-submit" type="submit" value="Suchen" name="tx_indexedsearch_pi2[search][submitButton]" />
+
+        <input type="hidden" name="tx_indexedsearch_pi2[__referrer][@extension]" value="IndexedSearch" />
+        <input type="hidden" name="tx_indexedsearch_pi2[__referrer][@vendor]" value="TYPO3\CMS" />
+        <input type="hidden" name="tx_indexedsearch_pi2[__referrer][@controller]" value="Search" />
+        <input type="hidden" name="tx_indexedsearch_pi2[__referrer][@action]" value="form" />
+
+        <input type="hidden" name="tx_indexedsearch_pi2[search][_sections]" value="0" />
+        <input type="hidden" name="tx_indexedsearch_pi2[search][pointer]" value="0" />
+        <input type="hidden" name="tx_indexedsearch_pi2[search][ext]" value="" />
+        <input type="hidden" name="tx_indexedsearch_pi2[search][languageUid]" value="###ACTLANG###" />
       </td>
     </tr>
     <tr>
@@ -36,6 +45,9 @@
     </tr>
   </table>
 </form>
+
+
+
 <!-- ###TEMPLATE### end -->
 </body>
 </html>
