@@ -6,7 +6,7 @@
 
 $EM_CONF[$_EXTKEY] = array(
     'title' => 'Searchbox for Indexed Search Engine',
-    'description' => 'This Extension offers the possibility to add a searchbox to your Typo3 powered website which submits the searchvalue to the Indexed Search Engine  plugin. The extension has a html template which is easy to modify and supports multiple languages.',
+    'description' => 'This Extension offers the possibility to add a searchbox to your Typo3 powered website which submits the searchvalue to the Indexed Search Engine  plugin without any result list output. The extension has a Fluid template which is easy to modify.',
     'category' => 'plugin',
     'shy' => 0,
     'state' => 'stable',
@@ -18,7 +18,7 @@ $EM_CONF[$_EXTKEY] = array(
     'author_company' => 'jambage.com',
     'CGLcompliance' => '',
     'CGLcompliance_note' => '',
-    'version' => '3.0.0',
+    'version' => '3.0.1',
     'constraints' => array(
         'depends' => array(
             'php' => '5.5.0-7.3.99',
