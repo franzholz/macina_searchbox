@@ -9,6 +9,27 @@ This extension offers the possibility to add a searchbox to your TYPO3 powered w
 	<tr><td>Author</td><td>Franz Holzinger, Wolfgang Becker</td></tr>
 </table>
 
+## CSS
+You can use these CSS settings in order to get the same output as in old versions of macina_searchbox.
+
+
+```
+.tx-indexedsearch-searchbox fieldset {
+  border:none;
+  padding:0 0 10px 0;
+  margin:0;
+}
+
+.tx-indexedsearch-form {
+  float: left;
+}
+
+.tx-indexedsearch-search-submit {
+    float: right;
+}
+```
+
+
 ## Contributions
 This git version is a successor of the release into the [TYPO3 Extension Repository](http://www.typo3.org/extensions/).
 You are invited to give comments and to make bug reports on this Github repository.
