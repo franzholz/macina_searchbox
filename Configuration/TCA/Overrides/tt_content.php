@@ -3,7 +3,7 @@ defined('TYPO3_MODE') || die('Access denied.');
 
 $table = 'tt_content';
 
-$listType = MACINA_SEARCHBOX_EXT . '_pi1"';
+$listType = MACINA_SEARCHBOX_EXT . '_pi1';
 
 $GLOBALS['TCA'][$table]['types']['list']['subtypes_excludelist'][$listType] = 'layout,select_key';
 $GLOBALS['TCA'][$table]['types']['list']['subtypes_addlist'][$listType] = 'pi_flexform';

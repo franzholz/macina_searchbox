@@ -29,6 +29,9 @@
   "require": {
     "typo3/cms-core": ">=7.6.0,<=9.5.99"
   },
+  "suggest": {
+    "typo3/cms-indexed-search": ">=7.6.0,<9.5.99"
+  },
   "replace": {
     "jambagecom/macina-searchbox": "self.version",
     "typo3-ter/macina-searchbox": "self.version"

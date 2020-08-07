@@ -1,3 +1,6 @@
+2020-08-07  Franz Holzinger  <franz@ttproducts.de>
+    * bugfix in tt_content TCA addPlugin and others.
+
 2020-01-17  Franz Holzinger  <franz@ttproducts.de>
     * add CSS comment to README.md.
     * remove the legend of the search form
