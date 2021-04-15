@@ -1,3 +1,7 @@
+
+2021-04-15  Franz Holzinger  <franz@ttproducts.de>
+    * bugfix issue #1: No ROOT element found in flex form definition. XML element s_general has not been closed.
+
 2020-08-07  Franz Holzinger  <franz@ttproducts.de>
     * bugfix in tt_content TCA addPlugin and others.
 
