@@ -7,6 +7,14 @@
 				<source>Searchbox</source>
 				<target>Suchbox</target>
 			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.sheet_general" xml:space="preserve">
+				<source>General</source>
+				<target>Allgemein</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.display_mode" xml:space="preserve">
+				<source>Display Mode</source>
+				<target>Anzeigetyp</target>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

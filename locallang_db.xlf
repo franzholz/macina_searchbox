@@ -6,6 +6,9 @@
 			<trans-unit id="tt_content.list_type" xml:space="preserve">
 				<source>Searchbox</source>
 			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.sheet_general" xml:space="preserve">
+				<source>General</source>
+			</trans-unit>
 			<trans-unit id="tt_content.pi_flexform.display_mode" xml:space="preserve">
 				<source>Display Mode</source>
 			</trans-unit>

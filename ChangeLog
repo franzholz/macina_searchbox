@@ -1,3 +1,6 @@
+2021-04-16  Franz Holzinger  <franz@ttproducts.de>
+    * bugfix labels in flexform
+    * It should work with TYPO3 10.
 
 2021-04-15  Franz Holzinger  <franz@ttproducts.de>
     * bugfix issue #1: No ROOT element found in flex form definition. XML element s_general has not been closed.

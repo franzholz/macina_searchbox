@@ -6,14 +6,14 @@
 		<s_general>
 			<ROOT>
 				<TCEforms>
-                    <sheetTitle>LLL:EXT:macina_searchbox/locallang_db.xml:tt_content.macina_searchbox.sheet_general</sheetTitle>
+                    <sheetTitle>LLL:EXT:macina_searchbox/locallang_db.xlf:tt_content.pi_flexform.sheet_general</sheetTitle>
 				</TCEforms>
 				<type>array</type>
 				<el>
 					<style>
 						<TCEforms>
 							<onChange>reload</onChange>
-                            <label>LLL:EXT:macina_searchbox/locallang_db.xml:tt_content.pi_flexform.display_mode</label>
+                            <label>LLL:EXT:macina_searchbox/locallang_db.xlf:tt_content.pi_flexform.display_mode</label>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
@@ -21,7 +21,7 @@
                                 <maxitems>1</maxitems>
                                 <items type="array">
                                     <numIndex index="2" type="array">
-                                        <numIndex index="0">LLL:EXT:jfmulticontent/locallang_db.xml:tt_content.pi_flexform.display_mode.default</numIndex>
+                                        <numIndex index="0">LLL:EXT:macina_searchbox/locallang_db.xlf:tt_content.pi_flexform.display_mode.default</numIndex>
                                         <numIndex index="1">DEFAULT</numIndex>
                                     </numIndex>
                                 </items>

@@ -27,10 +27,10 @@
     "GPL-2.0-or-later"
   ],
   "require": {
-    "typo3/cms-core": "7.6,^8.7,^9.5"
+    "typo3/cms-core": "7.6,^8.7,^9.5,^10.4"
   },
   "suggest": {
-    "typo3/cms-indexed-search": "7.6,^8.7,^9.5"
+    "typo3/cms-indexed-search": "7.6,^8.7,^9.5,^10.4"
   },
   "replace": {
     "jambagecom/macina-searchbox": "self.version"
