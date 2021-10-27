@@ -1,3 +1,6 @@
+2021-10-27  Franz Holzinger  <franz@ttproducts.de>
+    * fix issue #2: composer syntax errors
+
 2021-04-16  Franz Holzinger  <franz@ttproducts.de>
     * bugfix labels in flexform
     * It should work with TYPO3 10.
