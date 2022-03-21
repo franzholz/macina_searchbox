@@ -1,3 +1,7 @@
+2021-03-21  Franz Holzinger  <franz@ttproducts.de>
+    * bugfix labels
+    * It should work with TYPO3 11 and PHP 8.
+
 2021-10-27  Franz Holzinger  <franz@ttproducts.de>
     * fix issue #2: composer syntax errors
 

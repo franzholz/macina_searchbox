@@ -1,11 +1,11 @@
 # TYPO3 Extension "macina_searchbox"
 This extension offers the possibility to add a searchbox to your TYPO3 powered website which submits the searchvalue to the Indexed Search Engine plugin. The extension has a Fluid template which is easy to modify and supports multiple languages. Use the plugin of Indexed Search. This extension is useful to have a Fluid template which will not show the search results.
 
-## Version 3.0.3
+## Version 3.1.0
 
 <table>
-	<tr><td>Version</td><td>3.0.3 stable</td></tr>
-	<tr><td>Release date</td><td>7th April 2020</td></tr>
+	<tr><td>Version</td><td>3.1.0 stable</td></tr>
+	<tr><td>Release date</td><td>21st March 2022</td></tr>
 	<tr><td>Author</td><td>Franz Holzinger, Wolfgang Becker</td></tr>
 </table>
 
@@ -29,6 +29,9 @@ You can use these CSS settings in order to get the same output as in old version
 }
 ```
 
+## Usage
+
+Insert the setup of macina_searchbox from "include static (from extensions)" and insert an Indexed Search plugin. Do not use the plugin of macina_searchbox! This has been changed from the older versions.
 
 ## Contributions
 This git version is puglished under [TYPO3 Extension Repository](https://extensions.typo3.org/).
