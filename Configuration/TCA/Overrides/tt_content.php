@@ -5,7 +5,7 @@ $table = 'tt_content';
 
 $listType = MACINA_SEARCHBOX_EXT . '_pi1';
 
-$GLOBALS['TCA'][$table]['types']['list']['subtypes_excludelist'][$listType] = 'layout,select_key';
+$GLOBALS['TCA'][$table]['types']['list']['subtypes_excludelist'][$listType] = 'layout';
 $GLOBALS['TCA'][$table]['types']['list']['subtypes_addlist'][$listType] = 'pi_flexform';
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
