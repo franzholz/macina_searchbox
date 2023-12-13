@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2019-10-03T10:29:42Z" product-name="macina_searchbox">
+	<file source-language="en" datatype="plaintext" original="EXT:macina_searchbox/Resources/Private/Language/locallang.xlf" date="2019-10-03T10:29:42Z" product-name="macina_searchbox">
 		<header/>
 		<body>
-			<trans-unit id="pi1_title" xml:space="preserve">
+			<trans-unit id="pi1_title" resname="pi1_title">
 				<source>Searchbox</source>
 			</trans-unit>
-			<trans-unit id="pi1_plus_wiz_description" xml:space="preserve">
+			<trans-unit id="pi1_plus_wiz_description" resname="pi1_plus_wiz_description">
 				<source>Adds a Searchbox to the page.</source>
 			</trans-unit>
 		</body>

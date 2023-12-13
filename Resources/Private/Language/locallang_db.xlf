@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2019-10-03T10:30:04Z" product-name="macina_searchbox">
+	<file source-language="en" datatype="plaintext" original="EXT:macina_searchbox/Resources/Private/Language/locallang_db.xlf" date="2019-10-03T10:30:04Z" product-name="macina_searchbox">
 		<header/>
 		<body>
-			<trans-unit id="tt_content.list_type" xml:space="preserve">
+			<trans-unit id="tt_content.list_type" resname="tt_content.list_type">
 				<source>Searchbox</source>
 			</trans-unit>
-			<trans-unit id="tt_content.pi_flexform.sheet_general" xml:space="preserve">
+			<trans-unit id="tt_content.pi_flexform.sheet_general" resname="tt_content.pi_flexform.sheet_general">
 				<source>General</source>
 			</trans-unit>
-			<trans-unit id="tt_content.pi_flexform.display_mode" xml:space="preserve">
+			<trans-unit id="tt_content.pi_flexform.display_mode" resname="tt_content.pi_flexform.display_mode">
 				<source>Display Mode</source>
 			</trans-unit>
-			<trans-unit id="tt_content.pi_flexform.display_mode.default" xml:space="preserve">
+			<trans-unit id="tt_content.pi_flexform.display_mode.default" resname="tt_content.pi_flexform.display_mode.default">
 				<source>Default</source>
 			</trans-unit>
 		</body>
