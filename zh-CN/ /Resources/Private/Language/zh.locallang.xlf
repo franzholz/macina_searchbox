@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2019-10-03T10:29:42Z" product-name="macina_searchbox" target-language="zh-CN">
+    <header/>
+    <body>
+      <trans-unit id="pi1_title" xml:space="preserve">
+				<source>Searchbox</source>
+			<target state="needs-translation">Searchbox</target></trans-unit>
+      <trans-unit id="pi1_plus_wiz_description" xml:space="preserve">
+				<source>Adds a Searchbox to the page.</source>
+			<target state="needs-translation">Adds a Searchbox to the page.</target></trans-unit>
+    </body>
+  </file>
+</xliff>
