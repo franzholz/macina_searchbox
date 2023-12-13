@@ -3,13 +3,13 @@
   <file source-language="en" datatype="plaintext" original="EXT:macina_searchbox/Resources/Private/Language/locallang.xlf" date="2019-10-03T10:29:42Z" product-name="macina_searchbox" target-language="pl">
     <header/>
     <body>
-      <trans-unit id="pi1_title" resname="pi1_title">
+      <trans-unit id="pi1_title" resname="pi1_title" approved="yes">
         <source>Searchbox</source>
-        <target state="needs-translation">Searchbox</target>
+        <target state="final">Wyszukiwarka</target>
       </trans-unit>
-      <trans-unit id="pi1_plus_wiz_description" resname="pi1_plus_wiz_description">
+      <trans-unit id="pi1_plus_wiz_description" resname="pi1_plus_wiz_description" approved="yes">
         <source>Adds a Searchbox to the page.</source>
-        <target state="needs-translation">Adds a Searchbox to the page.</target>
+        <target state="final">Dodaje okienko wyszukiwania do strony</target>
       </trans-unit>
     </body>
   </file>
