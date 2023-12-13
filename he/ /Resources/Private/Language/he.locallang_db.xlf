@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2019-10-03T10:30:04Z" product-name="macina_searchbox" target-language="he">
+    <header/>
+    <body>
+      <trans-unit id="tt_content.list_type" xml:space="preserve">
+				<source>Searchbox</source>
+			<target state="needs-translation">Searchbox</target></trans-unit>
+      <trans-unit id="tt_content.pi_flexform.sheet_general" xml:space="preserve">
+				<source>General</source>
+			<target state="needs-translation">General</target></trans-unit>
+      <trans-unit id="tt_content.pi_flexform.display_mode" xml:space="preserve">
+				<source>Display Mode</source>
+			<target state="needs-translation">Display Mode</target></trans-unit>
+      <trans-unit id="tt_content.pi_flexform.display_mode.default" xml:space="preserve">
+				<source>Default</source>
+			<target state="needs-translation">Default</target></trans-unit>
+    </body>
+  </file>
+</xliff>
