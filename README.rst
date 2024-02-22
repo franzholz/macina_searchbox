@@ -4,7 +4,7 @@
    :alt: Latest Stable Version
 .. _LatestStableVersion: https://packagist.org/packages/jambagecom/macina-searchbox
 
-.. |TotalDownloads| image:: https://poser.pugx.org/friendsoftypo3/jambagecom/machina-searchbox/d/total.svg
+.. |TotalDownloads| image:: https://poser.pugx.org/jambagecom/machina-searchbox/d/total.svg
    :alt: Total Downloads
 .. _TotalDownloads: https://packagist.org/packages/jambagecom/machina-searchbox
 
