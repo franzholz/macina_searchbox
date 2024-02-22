@@ -64,9 +64,11 @@ comments and to make bug reports on this Github repository.
 
 
 
-|                  | URL                                                           |
-|------------------|---------------------------------------------------------------|
-| **Repository:**  | https://github.com/franzholz/macina_searchbox                 |
-| **Read online:** | https://github.com/franzholz/macina_searchbox                 |
-| **TER:**         | https://extensions.typo3.org/extension/macina_searchbox/      |
+.. csv-table::
+   :header: "", "URL"
 
+   **Repository:**,        https://github.com/franzholz/macina_searchbox
+   **Read online:**,       https://github.com/franzholz/macina_searchbox
+   **TER:**,               https://extensions.typo3.org/extension/macina_searchbox/
+   
+   
