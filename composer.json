@@ -27,10 +27,10 @@
     "GPL-2.0-or-later"
   ],
   "require": {
-    "typo3/cms-core": "^9.5 || ^10.4 || ^11.5"
+    "typo3/cms-core": "^11.5 || ^12.4"
   },
   "suggest": {
-    "typo3/cms-indexed-search": "^9.5 || ^10.4 || ^11.5"
+    "typo3/cms-indexed-search": "^11.5 || ^12.4"
   },
   "replace": {
     "typo3-ter/macina-searchbox": "self.version"

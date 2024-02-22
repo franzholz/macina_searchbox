@@ -13,14 +13,14 @@ $EM_CONF[$_EXTKEY] = [
     'author' => 'Franz Holzinger, Wolfgang Becker',
     'author_email' => 'franz@ttproducts.de',
     'author_company' => 'jambage.com',
-    'version' => '3.1.0',
+    'version' => '3.2.0',
     'constraints' => [
         'depends' => [
-            'php' => '7.4.0-8.1.99',
-            'typo3' => '9.5.0-11.5.99',
+            'php' => '7.4.0-8.4.99',
+            'typo3' => '11.5.0-12.4.99',
         ],
         'suggests' => [
-            'indexed_search' => '9.5.0-11.5.99',
+            'indexed_search' => '11.5.0-12.4.99',
         ],
     ],
 ];
