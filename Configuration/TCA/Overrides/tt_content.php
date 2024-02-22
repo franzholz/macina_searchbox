@@ -9,7 +9,7 @@ call_user_func(function ($extensionKey, $table): void {
 
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
         $listType,
-        'FILE:EXT:' . $extensionKey . '/pi1/flexform_ds_pi1.xml'
+        'FILE:EXT:' . $extensionKey . '/Configuration/Flexforms/Plugin.xml'
     );
 
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(

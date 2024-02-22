@@ -1,5 +1,6 @@
 2024-02-22  Franz Holzinger  <franz@ttproducts.de>
     * It should work with TYPO3 12.
+    * rename pi1/flexform_ds_pi1.xml -> Configuration/Flexforms/Plugin.xml
 
 2022-09-10  Franz Holzinger  <franz@ttproducts.de>
     * compatibility TYPO3 8.7: deprecation no 77934: The field `select_key` of the table `tt_content` is not used in the core and has been removed.
