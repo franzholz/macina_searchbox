@@ -1,5 +1,23 @@
-TYPO3 Extension “macina_searchbox”
-==================================
+|LatestStableVersion|_ |TotalDownloads|_ |MonthlyDownloads|_ 
+
+.. |LatestStableVersion| image:: https://poser.pugx.org/jambagecom/machina-searchbox/v/stable.svg
+   :alt: Latest Stable Version
+.. _LatestStableVersion: https://packagist.org/packages/jambagecom/macina-searchbox
+
+.. |TotalDownloads| image:: https://poser.pugx.org/friendsoftypo3/jambagecom/machina-searchbox/d/total.svg
+   :alt: Total Downloads
+.. _TotalDownloads: https://packagist.org/packages/jambagecom/machina-searchbox
+
+.. |MonthlyDownloads| image:: https://poser.pugx.org/jambagecom/machina-searchbox/d/monthly
+   :alt: Monthly Downloads
+.. _MonthlyDownloads: https://packagist.org/packages/jambagecom/machina-searchbox
+
+
+
+====================================
+TYPO3 Extension ``macina_searchbox``
+====================================
+
 
 This extension offers the possibility to add a searchbox to your TYPO3
 powered website which submits the searchvalue to the Indexed Search
@@ -8,102 +26,7 @@ modify and supports multiple languages. Use the plugin of Indexed
 Search. This extension is useful to have a Fluid template which will not
 show the search results.
 
-Version 3.1.0
--------------
 
-.. raw:: html
-
-   <table>
-
-.. raw:: html
-
-   <tr>
-
-.. raw:: html
-
-   <td>
-
-Version
-
-.. raw:: html
-
-   </td>
-
-.. raw:: html
-
-   <td>
-
-3.1.0 stable
-
-.. raw:: html
-
-   </td>
-
-.. raw:: html
-
-   </tr>
-
-.. raw:: html
-
-   <tr>
-
-.. raw:: html
-
-   <td>
-
-Release date
-
-.. raw:: html
-
-   </td>
-
-.. raw:: html
-
-   <td>
-
-21st March 2022
-
-.. raw:: html
-
-   </td>
-
-.. raw:: html
-
-   </tr>
-
-.. raw:: html
-
-   <tr>
-
-.. raw:: html
-
-   <td>
-
-Author
-
-.. raw:: html
-
-   </td>
-
-.. raw:: html
-
-   <td>
-
-Franz Holzinger, Wolfgang Becker
-
-.. raw:: html
-
-   </td>
-
-.. raw:: html
-
-   </tr>
-
-.. raw:: html
-
-   </table>
-
-CSS
 ---
 
 You can use these CSS settings in order to get the same output as in old
@@ -125,16 +48,25 @@ versions of macina_searchbox.
        float: right;
    }
 
-Usage
------
+
+## Usage
 
 Insert the setup of macina_searchbox from “include static (from
 extensions)” and insert an Indexed Search plugin. Do not use the plugin
 of macina_searchbox! This has been changed from the older versions.
 
-Contributions
--------------
+
+## Contributions
 
 This git version is puglished under `TYPO3 Extension
 Repository <https://extensions.typo3.org/>`__. You are invited to give
 comments and to make bug reports on this Github repository.
+
+
+
+|                  | URL                                                           |
+|------------------|---------------------------------------------------------------|
+| **Repository:**  | https://github.com/franzholz/macina_searchbox                 |
+| **Read online:** | https://github.com/franzholz/macina_searchbox                 |
+| **TER:**         | https://extensions.typo3.org/extension/macina_searchbox/      |
+
