@@ -49,14 +49,16 @@ versions of macina_searchbox.
    }
 
 
-## Usage
+Usage
+=====
 
 Insert the setup of macina_searchbox from “include static (from
 extensions)” and insert an Indexed Search plugin. Do not use the plugin
 of macina_searchbox! This has been changed from the older versions.
 
 
-## Contributions
+Contributions
+=============
 
 This git version is puglished under `TYPO3 Extension
 Repository <https://extensions.typo3.org/>`__. You are invited to give
@@ -67,8 +69,7 @@ comments and to make bug reports on this Github repository.
 .. csv-table::
    :header: "", "URL"
 
-   **Repository:**,        https://github.com/franzholz/macina_searchbox
-   **Read online:**,       https://github.com/franzholz/macina_searchbox
-   **TER:**,               https://extensions.typo3.org/extension/macina_searchbox/
-   
+   **Repository:**,        :samp:`https://github.com/{franzholz/macina_searchbox}/` 
+   **Read online:**,       :samp:`https://github.com/{franzholz/macina_searchbox}/`
+   **TER:**,               :samp:`https://extensions.typo3.org/extension/{macina_searchbox}/` 
    
