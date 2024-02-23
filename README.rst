@@ -69,7 +69,7 @@ comments and to make bug reports on this Github repository.
 .. csv-table::
    :header: "", "URL"
 
-   **Repository:**,        `t3o <https://github.com/franzholz/macina_searchbox/__` 
-   **Read online:**,       `t3o <https://github.com/franzholz/macina_searchbox/__`
-   **TER:**,               `t3o <https://extensions.typo3.org/extension/macina_searchbox/__` 
+   **Repository:**,        https://github.com/franzholz/macina_searchbox/ 
+   **Read online:**,       https://github.com/franzholz/macina_searchbox/
+   **TER:**,               https://extensions.typo3.org/extension/macina_searchbox/ 
    
