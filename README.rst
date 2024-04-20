@@ -111,9 +111,9 @@ comments and to make bug reports on this Github repository.
 .. csv-table::
    :header: "", "URL"
 
-   **Repository:**,        https://github.com/franzholz/macina_searchbox/
-   **Read online:**,       https://github.com/franzholz/macina_searchbox/
-   **TER:**,               https://extensions.typo3.org/extension/macina_searchbox/
-   **How to display search box on all pages:**            https://stackoverflow.com/questions/49363731/how-to-display-search-box-in-all-the-frontend-page-sidebar-typo3
+   **Repository:**,       https://github.com/franzholz/macina_searchbox/
+   **Read online:**,      https://github.com/franzholz/macina_searchbox/
+   **TER:**,              https://extensions.typo3.org/extension/macina_searchbox/
+   **Box on all pages:**  https://stackoverflow.com/questions/49363731/how-to-display-search-box-in-all-the-frontend-page-sidebar-typo3
 
 
