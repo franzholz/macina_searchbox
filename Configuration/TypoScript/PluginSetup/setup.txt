@@ -5,7 +5,6 @@ lib.macina_searchbox {
     extensionName = IndexedSearch
     vendorName = TYPO3\CMS
     pluginName = Pi2
-    features =< plugin.tx_indexedsearch.features
     view =< plugin.tx_indexedsearch.view
     view.partialRootPaths.10 = EXT:macina_searchbox/Resources/Private/Partials/
     view.templateRootPaths.10 = EXT:macina_searchbox/Resources/Private/Templates/
@@ -16,5 +15,10 @@ lib.macina_searchbox {
         displayAdvancedSearchLink = 1
         blind.numberOfResults = 0
     }
+}
+
+plugin.tx_macinasearchbox_pi1  = USER
+plugin.tx_macinasearchbox_pi1  {
+    userFunc = JambageCom\MacinaSearchbox\Controller\RegisterPluginController->main
 }
 

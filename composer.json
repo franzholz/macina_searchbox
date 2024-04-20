@@ -1,7 +1,7 @@
 {
   "name": "jambagecom/macina-searchbox",
   "type": "typo3-cms-extension",
-  "description": "This extension offers the possibility to add a searchbox to your TYPO3 powered website which submits the searchvalue to the Indexed Search Engine  plugin.",
+  "description": "This extension offers the possibility to add a configuration for the searchbox as a TypoScript plugin on all pages which submits the searchvalue to the Indexed Search Engine plugin.",
   "keywords": [
     "TYPO3",
     "extension",
@@ -27,10 +27,15 @@
     "GPL-2.0-or-later"
   ],
   "require": {
-    "typo3/cms-core": "^9.5 || ^10.4 || ^11.5"
+    "typo3/cms-core": "^11.5 || ^12.4"
   },
   "suggest": {
-    "typo3/cms-indexed-search": "^9.5 || ^10.4 || ^11.5"
+    "typo3/cms-indexed-search": "^11.5 || ^12.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "JambageCom\\MacinaSearchbox\\": "Classes"
+    }
   },
   "replace": {
     "typo3-ter/macina-searchbox": "self.version"

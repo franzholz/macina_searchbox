@@ -1,26 +1,27 @@
 <?php
 defined('TYPO3_MODE') || die('Access denied.');
 
-$table = 'tt_content';
+use \TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
-$listType = MACINA_SEARCHBOX_EXT . '_pi1';
+call_user_func(function ($extensionKey, $table): void {
+    $listType = $extensionKey . '_pi1';
+    $languageSubpath = '/Resources/Private/Language/';
 
-$GLOBALS['TCA'][$table]['types']['list']['subtypes_excludelist'][$listType] = 'layout';
-$GLOBALS['TCA'][$table]['types']['list']['subtypes_addlist'][$listType] = 'pi_flexform';
+    $GLOBALS['TCA'][$table]['types']['list']['subtypes_excludelist'][$listType] = 'layout';
+    $GLOBALS['TCA'][$table]['types']['list']['subtypes_addlist'][$listType] = 'pi_flexform';
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
-    $listType,
-    'FILE:EXT:' . MACINA_SEARCHBOX_EXT . '/pi1/flexform_ds_pi1.xml'
-);
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(
-    [
-        'LLL:EXT:' . MACINA_SEARCHBOX_EXT . '/Resources/Private/Language/locallang_db.xlf:tt_content.list_type',
+    ExtensionManagementUtility::addPiFlexFormValue(
         $listType,
-        'EXT:' . MACINA_SEARCHBOX_EXT . '/ext_icon.gif'
-    ],
-    'list_type',
-    MACINA_SEARCHBOX_EXT
-);
+        'FILE:EXT:' . $extensionKey . '/Configuration/Flexforms/Plugin.xml'
+    );
 
+    ExtensionManagementUtility::addPlugin(
+        [
+            'LLL:EXT:' . $extensionKey . $languageSubpath . 'locallang_db.xlf:tt_content.list_type',
+            $listType
+        ],
+        'list_type',
+        $extensionKey
+    );
+}, 'macina_searchbox', basename(__FILE__, '.php'));
 
