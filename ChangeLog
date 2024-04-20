@@ -1,3 +1,7 @@
+2024-04-20  Franz Holzinger  <franz@ttproducts.de>
+    * better README file
+    * remove undefined variable noCacheHash
+
 2024-02-22  Franz Holzinger  <franz@ttproducts.de>
     * It should work with TYPO3 12.
     * rename pi1/flexform_ds_pi1.xml -> Configuration/Flexforms/Plugin.xml
