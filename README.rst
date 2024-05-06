@@ -32,29 +32,38 @@ Search. This extension is useful to have a Fluid template which will not
 show the search results.
 
 
+User
+----
+
+
+
+TypoScript:
+^^^^^^^^^^^
+
 ::
 
-lib.macina_searchbox = USER
-lib.macina_searchbox {
-    userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
-    extensionName = IndexedSearch
-    vendorName = TYPO3\CMS
-    pluginName = Pi2
-    features =< plugin.tx_indexedsearch.features
-    view =< plugin.tx_indexedsearch.view
-    view.partialRootPaths.10 = EXT:macina_searchbox/Resources/Private/Partials/
-    view.templateRootPaths.10 = EXT:macina_searchbox/Resources/Private/Templates/
+   lib.macina_searchbox = USER
+   lib.macina_searchbox {
+       userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+       extensionName = IndexedSearch
+       vendorName = TYPO3\CMS
+       pluginName = Pi2
+       features =< plugin.tx_indexedsearch.features
+       view =< plugin.tx_indexedsearch.view
+       view.partialRootPaths.10 = EXT:macina_searchbox/Resources/Private/Partials/
+       view.templateRootPaths.10 = EXT:macina_searchbox/Resources/Private/Templates/
 
-    settings =< plugin.tx_indexedsearch.settings
-    settings {
-        targetPid = {$lib.macina_searchbox.pidSearchpage}
-        displayAdvancedSearchLink = 1
-        blind.numberOfResults = 0
-    }
-}
+       settings =< plugin.tx_indexedsearch.settings
+       settings {
+           targetPid = {$lib.macina_searchbox.pidSearchpage}
+           displayAdvancedSearchLink = 1
+           blind.numberOfResults = 0
+       }
+   }
 
 
----
+CSS:
+^^^^
 
 You can use these CSS settings in order to get the same output as in old
 versions of macina_searchbox.
@@ -76,8 +85,8 @@ versions of macina_searchbox.
    }
 
 
-Usage
-=====
+Administrator
+-------------
 
 Insert the setup of Indexed Search (indexed_search) and then of Macina Searchbox (macina_searchbox) from “include static (from
 extensions)” and insert an Indexed Search plugin. The Indexed Search setup must be before Macina Searchbox.
@@ -93,16 +102,16 @@ Then in your template add this:
   <f:cObject typoscriptObjectPath="lib.macina_searchbox" />
 
 
-or
+or alternatively:
 
 ::
 
    page.10.marks.LEFT < lib.macina_searchbox
 
 Contributions
-=============
+-------------
 
-This git version is puglished under `TYPO3 Extension
+This git version is published under `TYPO3 Extension
 Repository <https://extensions.typo3.org/>`__. You are invited to give
 comments and to make bug reports on this Github repository.
 
@@ -111,9 +120,9 @@ comments and to make bug reports on this Github repository.
 .. csv-table::
    :header: "", "URL"
 
-   **Repository:**,       https://github.com/franzholz/macina_searchbox/
-   **Read online:**,      https://github.com/franzholz/macina_searchbox/
-   **TER:**,              https://extensions.typo3.org/extension/macina_searchbox/
-   **Box on all pages:**  https://stackoverflow.com/questions/49363731/how-to-display-search-box-in-all-the-frontend-page-sidebar-typo3
+   **Repository:**,        https://github.com/franzholz/macina_searchbox/
+   **Read online:**,       https://github.com/franzholz/macina_searchbox/
+   **TER:**,               https://extensions.typo3.org/extension/macina_searchbox/
+   **Box on all pages:**,  https://stackoverflow.com/questions/49363731/how-to-display-search-box-in-all-the-frontend-page-sidebar-typo3
 
 
