@@ -34,24 +34,24 @@ show the search results.
 
 ::
 
-lib.macina_searchbox = USER
-lib.macina_searchbox {
-    userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
-    extensionName = IndexedSearch
-    vendorName = TYPO3\CMS
-    pluginName = Pi2
-    features =< plugin.tx_indexedsearch.features
-    view =< plugin.tx_indexedsearch.view
-    view.partialRootPaths.10 = EXT:macina_searchbox/Resources/Private/Partials/
-    view.templateRootPaths.10 = EXT:macina_searchbox/Resources/Private/Templates/
+   lib.macina_searchbox = USER
+   lib.macina_searchbox {
+       userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+       extensionName = IndexedSearch
+       vendorName = TYPO3\CMS
+       pluginName = Pi2
+       features =< plugin.tx_indexedsearch.features
+       view =< plugin.tx_indexedsearch.view
+       view.partialRootPaths.10 = EXT:macina_searchbox/Resources/Private/Partials/
+       view.templateRootPaths.10 = EXT:macina_searchbox/Resources/Private/Templates/
 
-    settings =< plugin.tx_indexedsearch.settings
-    settings {
-        targetPid = {$lib.macina_searchbox.pidSearchpage}
-        displayAdvancedSearchLink = 1
-        blind.numberOfResults = 0
-    }
-}
+       settings =< plugin.tx_indexedsearch.settings
+       settings {
+           targetPid = {$lib.macina_searchbox.pidSearchpage}
+           displayAdvancedSearchLink = 1
+           blind.numberOfResults = 0
+       }
+   }
 
 
 ---
