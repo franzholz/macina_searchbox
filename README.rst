@@ -32,6 +32,14 @@ Search. This extension is useful to have a Fluid template which will not
 show the search results.
 
 
+User
+----
+
+
+
+TypoScript:
+^^^^^^^^^^^
+
 ::
 
    lib.macina_searchbox = USER
@@ -54,7 +62,8 @@ show the search results.
    }
 
 
----
+CSS:
+^^^^
 
 You can use these CSS settings in order to get the same output as in old
 versions of macina_searchbox.
@@ -76,8 +85,8 @@ versions of macina_searchbox.
    }
 
 
-Usage
-=====
+Administrator
+-------------
 
 Insert the setup of Indexed Search (indexed_search) and then of Macina Searchbox (macina_searchbox) from “include static (from
 extensions)” and insert an Indexed Search plugin. The Indexed Search setup must be before Macina Searchbox.
@@ -100,7 +109,7 @@ or
    page.10.marks.LEFT < lib.macina_searchbox
 
 Contributions
-=============
+-------------
 
 This git version is puglished under `TYPO3 Extension
 Repository <https://extensions.typo3.org/>`__. You are invited to give
