@@ -33,12 +33,12 @@ show the search results.
 
 
 User
-----
+====
 
 
 
 TypoScript:
-^^^^^^^^^^^
+-----------
 
 ::
 
@@ -63,7 +63,7 @@ TypoScript:
 
 
 CSS:
-^^^^
+----
 
 You can use these CSS settings in order to get the same output as in old
 versions of macina_searchbox.
@@ -86,7 +86,7 @@ versions of macina_searchbox.
 
 
 Administrator
--------------
+=============
 
 Insert the setup of Indexed Search (indexed_search) and then of Macina Searchbox (macina_searchbox) from “include static (from
 extensions)” and insert an Indexed Search plugin. The Indexed Search setup must be before Macina Searchbox.
@@ -109,7 +109,7 @@ or alternatively:
    page.10.marks.LEFT < lib.macina_searchbox
 
 Contributions
--------------
+=============
 
 This git version is published under `TYPO3 Extension
 Repository <https://extensions.typo3.org/>`__. You are invited to give
