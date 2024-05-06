@@ -102,7 +102,7 @@ Then in your template add this:
   <f:cObject typoscriptObjectPath="lib.macina_searchbox" />
 
 
-or
+or alternatively:
 
 ::
 
@@ -111,7 +111,7 @@ or
 Contributions
 -------------
 
-This git version is puglished under `TYPO3 Extension
+This git version is published under `TYPO3 Extension
 Repository <https://extensions.typo3.org/>`__. You are invited to give
 comments and to make bug reports on this Github repository.
 
