@@ -5,15 +5,15 @@
     <body>
       <trans-unit id="tt_content.list_type" resname="tt_content.list_type">
         <source>Searchbox</source>
-        <target state="needs-translation">Searchbox</target>
+        <target state="translated">Suchbox</target>
       </trans-unit>
       <trans-unit id="tt_content.pi_flexform.sheet_general" resname="tt_content.pi_flexform.sheet_general">
         <source>General</source>
-        <target state="needs-translation">General</target>
+        <target state="translated">Allgemein</target>
       </trans-unit>
       <trans-unit id="tt_content.pi_flexform.display_mode" resname="tt_content.pi_flexform.display_mode">
         <source>Display Mode</source>
-        <target state="needs-translation">Display Mode</target>
+        <target state="translated">Anzeigetyp</target>
       </trans-unit>
       <trans-unit id="tt_content.pi_flexform.display_mode.default" resname="tt_content.pi_flexform.display_mode.default">
         <source>Default</source>
