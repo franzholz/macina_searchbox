@@ -15,10 +15,9 @@ namespace JambageCom\MacinaSearchbox\Controller;
  * The TYPO3 project - inspiring people to share!
  */
 
-use TYPO3\CMS\Frontend\Plugin\AbstractPlugin;
+use Psr\Http\Message\ServerRequestInterface;
 
-
-class RegisterPluginController extends AbstractPlugin
+class RegisterPluginController
 {
     /**
      * Should normally be set in the main function with the TypoScript content passed to the method.
@@ -36,8 +35,11 @@ class RegisterPluginController extends AbstractPlugin
     /**
     * Main board function. Call this from TypoScript
     */
-    public function main($content, $conf)
-    {
+    public function main(
+        string $content,
+        array $conf,
+        ServerRequestInterface $request
+    ) : string {
         $content = 'The extension ' . $this->extensionKey . ' does not use its own plugin but the setup lib.macina_searchbox to have your search plugin on one or many pages at the same time. The search results are forwarded to the TYPO3 system extension Indexed Search. This gives you the possibility for an easier insertion of search mask on each page at once.';
         return $content;
     }
