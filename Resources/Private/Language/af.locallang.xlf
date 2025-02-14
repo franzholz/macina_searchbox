@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:macina_searchbox/Resources/Private/Language/locallang.xlf" date="2019-10-03T10:29:42Z" product-name="macina_searchbox" target-language="af">
+    <header/>
+    <body>
+      <trans-unit id="pi1_title" resname="pi1_title">
+        <source>Searchbox</source>
+        <target state="needs-translation">Searchbox</target>
+      </trans-unit>
+      <trans-unit id="pi1_plus_wiz_description" resname="pi1_plus_wiz_description">
+        <source>Adds a Searchbox to the page.</source>
+        <target state="needs-translation">Adds a Searchbox to the page.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
